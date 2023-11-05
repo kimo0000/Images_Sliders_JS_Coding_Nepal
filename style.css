@@ -1,0 +1,87 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to left top, #afe142, #fa6958);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img {
+    width: 450px;
+    height: 230px;
+} */
+
+.wrapper {
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper .carousel {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    transition: .3s;
+}
+
+.wrapper .carousel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.wrapper i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 10;
+}
+
+.wrapper i:active {
+    transform: scale(.9);
+    opacity: .5;
+}
+
+.wrapper #prev {
+    left: 0%;
+}
+
+.wrapper #next {
+    right: 0%;
+}
+
+
+
+
+
